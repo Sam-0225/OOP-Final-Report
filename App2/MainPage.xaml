@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF62DECD">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="300" Margin="500,650,0,0" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="output" HorizontalAlignment="Left" Margin="1100,650,0,0" TextWrapping="Wrap" Text="Emotion Value" VerticalAlignment="Top" Height="300" Width="500"/>
+        <Button x:Name="takePhoto" Content="Take A Photo" HorizontalAlignment="Left" Margin="500,500,0,0" VerticalAlignment="Top" Height="40" Width="300" Click="takePhoto_Click"/>
+        <Button x:Name="getEmotion" Content="Check Emotion" HorizontalAlignment="Left" Margin="1100,500,0,0" VerticalAlignment="Top" Height="40" Width="500" Click="getEmotion_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="250,150,0,0" TextWrapping="Wrap" Text="圖像辨識系統" VerticalAlignment="Top" FontSize="72"/>
+        <TextBlock x:Name="description" HorizontalAlignment="Left" Margin="769,187,0,0" TextWrapping="Wrap" Text="點擊Take A Photo後可以按Check Emotion分析" VerticalAlignment="Top" FontSize="38"/>
+    </Grid>
+</Page>
